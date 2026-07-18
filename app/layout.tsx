@@ -12,5 +12,10 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7FCYC72MM"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-J7FCYC72MM");`,
+        }} />
+      </head><body>{children}</body></html>;
 }
