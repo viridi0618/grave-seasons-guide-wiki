@@ -20,7 +20,7 @@ const steamScrn5 = "https://shared.fastly.steamstatic.com/store_item_assets/stea
 export const guides: Guide[] = [
   {
     slug: "", title: "Grave Seasons Wiki Guide: Release Date, Characters & Romance", h1: "Grave Seasons Wiki Guide", eyebrow: "Independent pre-launch field guide",
-    description: "Your independent guide to Grave Seasons, the murder-mystery farming sim from Blumhouse Games. Release window, platforms, characters, romance, killer system, and confirmed gameplay details.",
+    description: "Independent guide to Grave Seasons from Blumhouse Games, covering the Fall 2026 release window, platforms, characters, romance, killer system, and gameplay.",
     intro: "A source-led guide to what is confirmed, what changed, and what is still unknown before Grave Seasons launches.", image: keyArt,
     facts: [
       { label: "Developer", value: "Perfect Garbage" }, { label: "Publisher", value: "Blumhouse Games" },
@@ -45,7 +45,7 @@ export const guides: Guide[] = [
   },
   {
     slug: "release-date", title: "Grave Seasons Release Date: Fall 2026 Window & Exact Date TBA", h1: "Grave Seasons Release Date", eyebrow: "Release status",
-    description: "Grave Seasons is currently listed for Fall 2026 on PC, PS5, Xbox Series X|S, and Nintendo Switch. It was previously announced for August 14, 2026, but the exact new date is TBA.",
+    description: "Grave Seasons is listed for Fall 2026 on PC, PS5, Xbox One, Xbox Series X|S, and Nintendo Switch. August 14, 2026 was the previous date; the new date is TBA.",
     intro: "Grave Seasons is currently listed for Fall 2026. The exact updated release date has not been announced.", image: steamScrn1, cardImage: keyArt,
     facts: [{ label:"Current window",value:"Fall 2026"},{label:"Exact date",value:"TBA"},{label:"Earlier date",value:"August 14, 2026"},{label:"Platforms",value:"PC, PS5, Xbox Series X|S, Switch"}],
     sections: [
@@ -88,7 +88,7 @@ export const guides: Guide[] = [
     faq:[{question:"Is Grave Seasons coming to PS5?",answer:"Yes."},{question:"Is Grave Seasons on PS4?",answer:"A PS4 version has not been announced."},{question:"Is Grave Seasons PS5 Pro enhanced?",answer:"No PS5 Pro enhancement has been announced."},{question:"Can I wishlist Grave Seasons on PlayStation?",answer:"Check the current PlayStation listing for the action available in your region."}],internalLinks:["platforms","release-date","xbox","switch"],
   },
   {
-    slug:"xbox",title:"Is Grave Seasons on Xbox?",h1:"Grave Seasons Xbox Guide",eyebrow:"Xbox status",description:"Grave Seasons is confirmed for Xbox One and Xbox Series X|S and was previously announced for Day One Xbox Game Pass. Here is the Xbox release status and what remains TBA.",intro:"Xbox One and Xbox Series X|S are confirmed, Xbox Play Anywhere is listed, and earlier official messaging announced Day One Xbox Game Pass availability.",image:steamScrn5,cardImage:steamScrn2,
+slug:"xbox",title:"Is Grave Seasons on Xbox?",h1:"Grave Seasons Xbox Guide",eyebrow:"Xbox status",description:"Grave Seasons is confirmed for Xbox One and Xbox Series X|S, with Play Anywhere listed. Day One Game Pass was previously announced for Fall 2026.",intro:"Xbox One and Xbox Series X|S are confirmed, Xbox Play Anywhere is listed, and earlier official messaging announced Day One Xbox Game Pass availability.",image:steamScrn5,cardImage:steamScrn2,
     facts:[{label:"Xbox One",value:"Confirmed"},{label:"Xbox Series X|S",value:"Confirmed"},{label:"Xbox Play Anywhere",value:"Confirmed by current Xbox listing"},{label:"Game Pass",value:"Day One previously announced"},{label:"Release window",value:"Fall 2026"}],
     sections:[{heading:"Is Grave Seasons on Xbox?",paragraphs:["Yes. The current Xbox Store listing names Xbox One and Xbox Series X|S and displays Xbox Play Anywhere."]},{heading:"Xbox platform status",paragraphs:["Xbox One and Xbox Series X|S are confirmed. The current overall release window is Fall 2026, with the exact updated date TBA."]},{heading:"Xbox Play Anywhere status",paragraphs:["The current Xbox Store listing displays Xbox Play Anywhere. This guide does not infer cross-save implementation details, cross-progression, cloud availability, regional availability, or purchase entitlement rules beyond that label."]},{heading:"Game Pass status",paragraphs:["Day One Xbox Game Pass was announced in earlier official messaging. Current tier, platform coverage, subscription eligibility, and regional availability should be verified through Xbox before launch."]},{heading:"Store and wishlist status",paragraphs:["Use the live Xbox listing for current wishlist, pre-install, or purchase options."]}],
     faq:[{question:"Is Grave Seasons on Xbox Series X|S?",answer:"Yes. Xbox Series X|S is listed on the current official Xbox Store product page."},{question:"Is Grave Seasons on Xbox One?",answer:"Yes. Xbox One is listed on the current official Xbox Store product page."},{question:"Is Grave Seasons on Game Pass?",answer:"Day One Game Pass was previously announced; verify current tier, platform, eligibility, and regional details through Xbox."},{question:"Does Grave Seasons support Xbox Play Anywhere?",answer:"Yes. The current Xbox Store listing displays Xbox Play Anywhere."}],internalLinks:["game-pass","platforms","release-date","ps5"],
