@@ -9,6 +9,9 @@ const sources = [
   { label: "Steam store", href: "https://store.steampowered.com/app/3255110/Grave_Seasons/" },
   { label: "Blumhouse Games", href: "https://www.blumhouse.com/games/grave-seasons" },
   { label: "Perfect Garbage", href: "https://www.perfectgarbage.com/grave-seasons" },
+  { label: "PlayStation Store — Grave Seasons", href: "https://store.playstation.com/en-us/concept/10010052" },
+  { label: "Xbox — Grave Seasons / Game Pass", href: "https://www.xbox.com/en-US/games/grave-seasons" },
+  { label: "Nintendo — Grave Seasons Announcement Trailer", href: "https://www.youtube.com/watch?v=V6q7nLZ5Bbs" },
   { label: "Steam news", href: "https://steamcommunity.com/app/3255110" },
 ];
 
@@ -38,7 +41,7 @@ function GuideCards({ guide }: { guide: Guide }) {
   return <div className="guide-grid">{ids.map((slug) => {
     const item = getGuide(slug);
     return <Link className="card" href={`/${slug}`} key={slug}>
-      <img src={item.image} alt="" loading="lazy" decoding="async" referrerPolicy="no-referrer" />
+      <img src={item.image} alt="" width="460" height="200" loading="lazy" decoding="async" referrerPolicy="no-referrer" />
       <div className="card-body"><span className="eyebrow">Guide</span><h3>{item.h1}</h3><p>{item.description}</p></div>
     </Link>;
   })}</div>;
