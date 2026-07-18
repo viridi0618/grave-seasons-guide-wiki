@@ -22,3 +22,4 @@ node --test tests/site.test.mjs
 ```
 
 Production canonicals and sitemap URLs use `https://graveseasonsguide.wiki`.
+
