@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <html lang="en"><head>
-        <meta name="google-site-verification" content="google70d2f5ada7903a5f" />
+        <meta name="google-site-verification" content="rNep-Mx67PHaSLZXA8YhBlz5_lH2gZEu--B4Tiwoh3o" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7FCYC72MM"></script>
         <script dangerouslySetInnerHTML={{
           __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "G-J7FCYC72MM");`,
