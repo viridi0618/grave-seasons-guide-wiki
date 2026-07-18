@@ -16,7 +16,7 @@ const fail = (message) => { console.error(`FAIL: ${message}`); process.exitCode 
 if (slugs.length !== 12 || new Set(slugs).size !== 12) fail("Expected 12 unique guide slugs");
 if (routes.some((route) => !slugs.includes(route === "/" ? "" : route.slice(1)))) fail("Route list does not match guide data");
 if (internal.some((slug) => !slugs.includes(slug))) fail("Internal link points to a missing route");
-if (/\/(download|android)(["'\/])/i.test(allText)) fail("Unsafe route found");
+if (/\/(download|android|apk|free|cracked|mobile-download|ios-download)(["'\/])/i.test(allText)) fail("Unsafe route found");
 if (/Official Grave Seasons Wiki|official guide/i.test(allText)) fail("Affiliation wording found");
 if ((allText.match(/"@type": "FAQPage"/g) || []).length !== 1) fail("FAQ schema implementation should exist once");
 if (!allText.includes("https://graveseasonsguide.wiki")) fail("Canonical site URL missing");

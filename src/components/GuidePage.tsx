@@ -9,10 +9,9 @@ const sources = [
   { label: "Steam store", href: "https://store.steampowered.com/app/3255110/Grave_Seasons/" },
   { label: "Blumhouse Games", href: "https://www.blumhouse.com/games/grave-seasons" },
   { label: "Perfect Garbage", href: "https://www.perfectgarbage.com/grave-seasons" },
-  { label: "PlayStation Store — Grave Seasons", href: "https://store.playstation.com/en-us/concept/10010052" },
-  { label: "Xbox — Grave Seasons / Game Pass", href: "https://www.xbox.com/en-US/games/grave-seasons" },
+  { label: "PlayStation Store — Grave Seasons", href: "https://store.playstation.com/en-us/concept/10014259" },
+  { label: "Xbox Store — Grave Seasons", href: "https://www.xbox.com/en-us/games/store/grave-seasons/9n36kgdxkm0s" },
   { label: "Nintendo — Grave Seasons Announcement Trailer", href: "https://www.youtube.com/watch?v=V6q7nLZ5Bbs" },
-  { label: "Steam news", href: "https://steamcommunity.com/app/3255110" },
 ];
 
 function Schema({ guide }: { guide: Guide }) {
@@ -41,8 +40,8 @@ function GuideCards({ guide }: { guide: Guide }) {
   return <div className="guide-grid">{ids.map((slug) => {
     const item = getGuide(slug);
     return <Link className="card" href={`/${slug}`} key={slug}>
-      <img src={item.image} alt="" width="460" height="200" loading="lazy" decoding="async" referrerPolicy="no-referrer" />
-      <div className="card-body"><span className="eyebrow">Guide</span><h3>{item.h1}</h3><p>{item.description}</p></div>
+      <img src={item.cardImage || item.image} alt="" width="460" height="200" loading="lazy" decoding="async" referrerPolicy="no-referrer" />
+      <div className="card-body"><h3>{item.h1}</h3><p>{item.description}</p></div>
     </Link>;
   })}</div>;
 }
@@ -64,7 +63,7 @@ export function GuidePage({ guide }: { guide: Guide }) {
           {guide.sections.map((section) => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}
           <section className="faq"><span className="eyebrow">Common questions</span><h2>FAQ</h2>{guide.faq.map((item) => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</section>
           {guide.slug !== "" && <section><span className="eyebrow">Continue exploring</span><h2>Related guides</h2><GuideCards guide={guide} /></section>}
-          <section className="sources"><span className="eyebrow">Source ledger</span><h2>Primary sources</h2><p className="source-note">Current publisher and store pages take priority over older announcement wording. Store listings can change before launch.</p><ul>{sources.map((source) => <li key={source.href}><a href={source.href} rel="noopener noreferrer">{source.label}</a></li>)}</ul><p className="updated">Last reviewed July 18, 2026</p></section>
+          <section className="sources"><span className="eyebrow">Source ledger</span><h2>Sources and official channels</h2><p className="source-note">Current publisher and store pages take priority over older announcement wording. Store listings can change before launch.</p><ul>{sources.map((source) => <li key={source.href}><a href={source.href} rel="noopener noreferrer">{source.label}</a></li>)}</ul><p className="updated">Last reviewed July 18, 2026</p></section>
         </article>
         <aside className="sidebar" aria-label="Guide sidebar">
           <div className="side-box"><h2>On this page</h2><ul>{guide.sections.map((section) => <li key={section.heading}>{section.heading}</li>)}</ul></div>
